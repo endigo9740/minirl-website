@@ -1,0 +1,133 @@
+* {margin: 0; padding: 0;}
+body {background-color: #1d282b; color: #677273; font-family: 'Muli', sans-serif;}
+
+h1 {display: none;}
+h2 {font-size: 75px; font-weight: 900; text-transform: uppercase;}
+p {font-size: 20px; line-height: 32px;}
+p+p {margin-top: 32px;}
+a {text-decoration: none; transition: background-color 250ms linear, color 250ms linear;}
+a:hover {color: #fffae9;}
+
+input, button {display: inline-block; font-family: 'Muli', sans-serif; transition: background-color 250ms linear;}
+	input {box-sizing: border-box;}
+	button {cursor: pointer; font-weight: 700; text-transform: uppercase;}
+	::-webkit-input-placeholder {color: #e7e7c6}
+	::-moz-placeholder {color: #e7e7c6}
+	-ms-input-placeholder {color: #e7e7c6}
+.wrap {max-width: 1440px; margin: auto;}
+
+/* Gallery Modal */
+#galleryShade {
+	display: none;
+	background: rgba(0,0,0,0.8); width: 100%; height: 100%;
+	position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 999;
+}
+#galleryModal {
+	background: #242424; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.5); width: 1024px; height: 768px; margin: 0 auto; overflow: hidden;
+	position: absolute; left: 50%; top: 50%;
+	-webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); /* center vert */
+}
+#galleryModal img {width: 100%; height: 100%;}
+
+/* Navigation */
+#mainNav {background: #e56144; position: fixed; top: 0; left: 0; right: 0; text-align: center;}
+#mainNav a {color: #800027; display: inline-block; font-size: 18px; font-weight: 900; text-transform: uppercase; padding: 10px 0;}
+#mainNav a:hover {color: #fffae9;}
+#mainNav a+a {margin-left: 40px;}
+
+/* Banner */
+header {
+	background: #331122 url("../img/banner-bg.jpg") center center no-repeat; background-size: cover;
+	color: #663c5c; font-size: 20px; padding: 150px 0 100px; text-transform: uppercase; text-align: center;
+}
+header a {border-bottom: 2px solid #5c3451; color: #5c3451; font-weight: bold; display: inline-block; margin-top: 25px; padding-bottom: 1px;}
+
+/* Buy Now */
+#buy {background: #0e9f7f; color: #e7e7c6; padding: 50px 0; text-align: center}
+	#buy h3 {margin: 20px 0 10px;}
+	#buy a {color: #FFF;}
+	#humbleBundleWidget {border: none; width: 100%; max-width: 600px; height: 261px;} /* 261px */
+	#itchioWidget {width: 552px; height: 167px;}
+	#itchioMobileLink {display: none; background: rgba(0,0,0,0.25); padding: 5px 10px; text-align: center;}
+	#buy ul {overflow: hidden; max-width: 600px; margin: auto;}
+
+	#buy ul {display: flex; justify-content: center;}
+	#buy li {flex: 0; list-style: none;}
+	#buy li+li {margin-left: 20px;}
+
+	#buy img {height: 50px; width: auto;}
+	.storeDisabled {opacity: 0.25;}
+	.storeDisabled a {cursor: default;}
+
+/* Core Content */
+#core {padding: 100px 0;}
+
+	/* Media */
+	#media {text-align: center;}
+		#videoEmbed, #gallery a {box-shadow: 0 0 20px rgba(0,0,0,0.5);}
+		#videoEmbed {background: #242424; border-radius: 8px; display: block; margin: 0 auto; width: 600px; height: 338px;}
+		#gallery {margin-top: 20px;}
+		#gallery a {border-radius: 8px; display: inline-block; width: 100px; height: 100px; overflow: hidden;}
+		#gallery a+a {margin-left: 20px;}
+		#gallery img {height: 100%; width: auto; margin: 0 auto;}
+	
+	/* About */
+	#about {margin-top: 100px;}
+		#about h2 {color: #f9f37d; text-align: center;}
+		#about blockquote {color: #fffae9; font-size: 30px; line-height: 50px; font-weight: bold; margin: 50px auto; max-width: 760px;}
+		#about #copy {margin: 0 auto; max-width: 600px;}
+		#about #copy a {color: #7E8788; text-decoration: underline;}
+
+/* Social */
+footer {margin-bottom: 100px; text-align: center;}
+	#social {background: #016c9a; padding: 50px 0; margin-bottom: 100px;}
+	#social a {background: #2ffef9; border-radius: 8px; display: inline-block; padding: 10px; width: 50px; height: 50px;}
+	#social a:hover {background: #fffae9;}
+	#social a+a {margin-left: 20px;}
+
+/* === RESPONSIVE STYLSE === */
+
+.mobileOnly {display: none !important;}
+@media (max-width: 1200px) {
+	#galleryModal {width: 600px; height: 450px;}
+}
+@media (max-width: 800px) {
+	#about blockquote {margin: 25px auto; max-width: 600px;}
+}
+@media (max-width: 640px) {
+	.wrap {margin: 0 20px;}
+	.mobileOnly {display: block !important;}
+
+	#mainNav .wrap {display: none;}
+
+	header {padding: 100px 0 50px;}
+	header img {width: 100%; height: auto;}
+	header a {margin-top: 18px;}
+
+	#buy p {font-size: 16px; line-height: 24px;}
+	#buy img {width: 100%; height: auto;}
+	#buy input, #buy button {width: 100%;}
+	#humbleBundleWidget {height: 142px;}
+	#itchioWidget {display: none;}
+	#itchioMobileLink {display: block;}
+
+	/* #buy li {float: none; width: 100%;} */
+	/* #buy li+li {margin-top: 10px;} */
+	#buy ul {flex-direction: column;}
+	#buy li+li {margin: 10px 0 0;}
+
+	#buy img {height: auto; width: 280px;}
+
+	#core {padding: 50px 0;}
+		#videoEmbed {background: #242424; border-radius: 8px; display: block; margin: 0 auto; width: 280px; height: 158px;} /* **** */
+		#gallery {margin-top: 20px;}
+		#gallery a {display: block; width: 250px; height: 210px; margin: auto;}
+		#gallery a+a {margin: 20px auto 0;}
+
+	#about {margin-top: 50px;}
+		#about h2 {font-size: 60px;}
+		#about #copy {max-width: initial;}
+}
+@media (max-width: 400px) { /* Small Phones */
+	#studioLogo {width: 100%; height: auto;}
+}

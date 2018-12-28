@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no' />
+	<meta name="description" content="Minirl is procedurally-generated 2D roguelike with puzzle elements, featuring Hank, the adorably murderous square boy."/>
+	<meta name="keywords" content="minirl,game,indie,2d,roguelike,puzzle,pc,mac,linux,android,ios"/>
+	<meta name="theme-color" content="#e56144">
+	<title>Minirl - A Fun and Unique Roguelike Puzzle Game from Chris Simmons</title>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300,100'>
+	<link rel="stylesheet" href="styles.css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+
+	<!-- Gallery Modal -->
+	<div id="galleryShade" onclick="gallery(); return false;">
+		<div id="galleryModal" title="Tap to Close">
+			<img id="CurrentModalImage" src="img/screenshots/003.png" alt="Current Image">
+		</div>
+	</div>
+
+	<!-- Page Navigation -->
+	<nav id="mainNav">
+		<div class="wrap">
+			<a data-scroll href="#">Home</a>
+			<a data-scroll href="#buy">Buy</a>
+			<a data-scroll href="#media">Media</a>
+			<a data-scroll href="#about">About</a>
+			<a data-scroll href="#social">Social</a>
+			<!-- <a href="http://www.minirlgame.com/presskit/sheet.php?p=minirl" target="_blank">Presskit</a> -->
+		</div>
+		<a href="http://www.minirlgame.com/presskit/sheet.php?p=minirl" target="_blank" class="mobileOnly">View Presskit</a>
+	</nav>
+
+	<!-- Header -->
+	<header>
+		<div class="wrap">
+			<h1>Minirl</h1>
+			<img src="img/banner-logo.png" alt="Minirl">
+			<p>A game by <a href="http://endigodesign.com" target="_blank">Chris Simmons</a></p>
+		</div>
+	</header>
+
+	<!-- Buy Now -->
+	<a id="#buy" target="#buy"></a>
+	<section id="buy">
+		<div class="wrap">
+
+			<img src="img/banner-buynow.png" id="buyBanner" alt="Minirl">
+
+			<h3>Purchase for Your Mobile Device</h3>
+			<ul>
+				<!-- class="storeDisabled" -->
+				<!-- <li><a href="https://itunes.apple.com/us/app/minirl/id1095383054?ls=1&mt=8" target="_blank"><img src="img/store_apple.png" alt="iOS App Store"></a></li> -->
+				<li><a href="https://play.google.com/store/apps/details?id=com.endigodesign.minirl" target="_blank"><img src="img/store_android.png" alt="Google Play Store"></a></li>
+				<li><a href="http://www.amazon.com/Endigo-Minirl/dp/B01DSB568S/" target="_blank"><img src="img/store_amazon.png" alt="Amazon App Store"></a></li>
+			</ul>
+			
+			<!-- <h3>Windows, Mac, Linux via Humble Bundle</h3> -->
+			<!-- <iframe src="https://www.humblebundle.com/widget/v2/product/minirl_widget/kG2ihxHuVO?theme=transparent-light" width="526" height="263" style="border: none;" scrolling="no" frameborder="0"></iframe> -->
+
+			<h3>Windows, Mac, Linux via itch.io</h3>
+			<iframe src="https://itch.io/embed/60035?linkback=true" id="itchioWidget" width="552" height="167" frameborder="0"></iframe>
+			<p id="itchioMobileLink"><a href="https://endigo9740.itch.io/minirl" target="_blank">View now on itch.io</a></p>
+
+			<h3>Soundtrack Now Available!</h3>
+			<iframe style="border: 0; width: 600px; height: 120px;" src="http://bandcamp.com/EmbeddedPlayer/album=3713893774/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://jessewdjames.bandcamp.com/album/minirl">Minirl by Jesse W D James</a></iframe>
+
+			<!-- <h3>Vote for Minirl on Steam Greenlight</h3>
+			<iframe src="http://steamcommunity.com/sharedfiles/widget/653707840" width="336" height="137" frameborder="0" scrolling="no"></iframe> -->
+		</div>
+	</section>
+
+	<!-- Core Content -->
+	<section id="core">
+
+		<!-- Media -->
+		<a id="#media" target="#media"></a>
+		<div id="media" class="wrap">
+			<iframe id="videoEmbed" src="https://www.youtube.com/embed/34FzHsNFN1g" frameborder="0" allowfullscreen></iframe>
+			<nav id="gallery">
+				<a href="img/screenshots/001.png" target="_blank" onclick="gallery(this.href); return false;"><img src="img/screenshots/001.png" alt="Forest"></a>
+				<a href="img/screenshots/002.png" target="_blank" onclick="gallery(this.href); return false;"><img src="img/screenshots/002.png" alt="Cave"></a>
+				<a href="img/screenshots/003.png" target="_blank" onclick="gallery(this.href); return false;"><img src="img/screenshots/003.png" alt="Snow"></a>
+				<a href="img/screenshots/004.png" target="_blank" onclick="gallery(this.href); return false;"><img src="img/screenshots/004.png" alt="Fire"></a>
+				<a href="img/screenshots/005.png" target="_blank" onclick="gallery(this.href); return false;"><img src="img/screenshots/005.png" alt="Space"></a>
+			</nav>
+		</div>
+
+		<!-- About -->
+		<a id="#about" target="#about"></a>
+		<div id="about" class="wrap">
+			<h2>About</h2>
+			<blockquote>Minirl features a unique blend of genres, challenging gameplay, and fun adventure.</blockquote>
+			<div id="copy">
+				<p>You play as <strong>Hank</strong>, the adorably murderous square boy, as he traverses a variety of exuberant worlds full of creepy monsters and dangerous obstacles in his search for Minirls - powerful gems that grant him power.</p>
+				<p>Minirl is procedurally-generated 2D roguelike with puzzle elements. This means a unique experience each time you play, and accessible gameplay allowing you to dive right into the fun!</p>
+				<p>Audio by <a href="http://www.jessewdjames.com/" target="_blank">Jesse W.D. James</a> and mixed by <a href="http://origincreative.net/" target="_blank">Paul Lipscomb at Origin</a>.</p>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- Footer -->
+	<a id="#social" target="#social"></a>
+	<footer>
+		<div id="social">
+			<nav class="wrap">
+				<a href="mailto:gundamx9740@gmail.com"><img src="img/social-email.png" alt="Email"></a>
+				<a href="https://medium.com/@endigo9740" target="_blank"><img src="img/social-medium.png" alt="Medium"></a>
+				<a href="https://twitter.com/endigodesign" target="_blank"><img src="img/social-twitter.png" alt="Twitter"></a>
+			</nav>
+		</div>
+		<div class="wrap">
+			<a href="http://www.endigodesign.com" target="_blank"><img id="studioLogo" src="img/endigo-logo.png" alt="Minirl"></a>
+		</div>
+	</footer>
+
+<script src="scripts.js"></script>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-3678140-4', 'auto');
+	ga('send', 'pageview');
+</script>
+</body>
+</html>
