@@ -37,7 +37,7 @@ input, button {display: inline-block; font-family: 'Muli', sans-serif; transitio
 
 /* Banner */
 header {
-	background: #331122 url("../img/banner-bg.jpg") center center no-repeat; background-size: cover;
+	background: #331122 url("img/banner-bg.jpg") center center no-repeat; background-size: cover;
 	color: #663c5c; font-size: 20px; padding: 150px 0 100px; text-transform: uppercase; text-align: center;
 }
 header a {border-bottom: 2px solid #5c3451; color: #5c3451; font-weight: bold; display: inline-block; margin-top: 25px; padding-bottom: 1px;}
